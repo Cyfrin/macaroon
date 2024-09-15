@@ -1,0 +1,38 @@
+[project]
+name = "macaroon"
+version = "0.2.0"
+description = "A sweet, delicious, fork of moccasin."
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "moccasin>=0.2.0",
+]
+
+[tool.uv]
+upgrade = true
+managed = true
+package = true
+dev-dependencies = [
+    "macaroon",
+]
+
+[tool.uv.sources]
+macaroon = { workspace = true }
+
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "macaroon",
+]
+
+[project.scripts]
+"roon" = "moccasin:main"
+"macaroon" = "moccasin:main"
