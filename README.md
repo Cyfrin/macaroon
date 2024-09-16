@@ -1,5 +1,7 @@
 # Macaroon
 
+![](./macaroons.jpg)
+
 A fun skin for [moccasin](https://pypi.org/project/moccasin/). Head there for docs.
 
 # Installation
